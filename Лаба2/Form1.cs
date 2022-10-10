@@ -42,8 +42,7 @@ namespace Лаба2
                     rub = (int)n / 100;
                     kop = n % 100;
                     double help;
-                    help = rub % 10;
-                    
+                     
                     if (rub > 0)
                     {
                         help = rub % 10;
@@ -63,21 +62,25 @@ namespace Лаба2
                             }
                         }
                     }
-                    if (help == 5 || help == 6 || help == 7 || help == 8 || help == 9 || kop == 10 || kop == 11 || kop == 12 || kop == 13 || kop == 14)
+                    if (kop > 0)
                     {
-                        outMessage1 += $" {kop} копеек";
-                    }
-                    else
-                    {
-                        if (help == 1)
+                        help = kop % 10;
+                        if (help == 5 || help == 6 || help == 7 || help == 8 || help == 9 || kop == 10 || kop == 11 || kop == 12 || kop == 13 || kop == 14)
                         {
-                            outMessage1 += $" {kop} копейка";
+                            outMessage1 += $" {kop} копеек";
                         }
                         else
                         {
-                            outMessage1 += $" {kop} копейки";
+                            if (help == 1)
+                            {
+                                outMessage1 += $" {kop} копейка";
+                            }
+                            else
+                            {
+                                outMessage1 += $" {kop} копейки";
+                            }
                         }
-                    }
+                    }   
                 }
                 return outMessage1;
             }
