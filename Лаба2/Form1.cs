@@ -1,3 +1,5 @@
+using System.Security.Policy;
+
 namespace Лаба2
 {
     public partial class Form1 : Form
@@ -84,6 +86,19 @@ namespace Лаба2
                 }
                 return outMessage1;
             }
+        }
+
+        private void Form1_ForeColorChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            double money;
+            money = double.Parse(this.numNBox1.Text);
+            Properties.Settings.Default.money = money;
+            Properties.Settings.Default.Save();
         }
     }
 }
