@@ -49,33 +49,33 @@ namespace Лаба2
                         help = rub % 10;
                         if (help == 5 || help == 6 || help == 7 || help == 8 || help == 9 || rub == 10 || rub == 11 || rub == 12 || rub == 13 || rub == 14)
                         {
-                            outMessage1 = $" {rub} рублей";
+                            outMessage1 = $"{rub} рублей";
                         }
                         else
                         {
                             if (help == 1)
                             {
-                                outMessage1 = $" {rub} рубль";
+                                outMessage1 = $"{rub} рубль";
                             }
                             else
                             {
-                                outMessage1 = $" {rub} рубля";
+                                outMessage1 = $"{rub} рубля";
                             }
                         }
                     }
                     if (help == 5 || help == 6 || help == 7 || help == 8 || help == 9 || kop == 10 || kop == 11 || kop == 12 || kop == 13 || kop == 14)
                     {
-                        outMessage1 += $"{kop} копеек";
+                        outMessage1 += $" {kop} копеек";
                     }
                     else
                     {
                         if (help == 1)
                         {
-                            outMessage1 += $"{kop} копейка";
+                            outMessage1 += $" {kop} копейка";
                         }
                         else
                         {
-                            outMessage1 += $"{kop} копейки";
+                            outMessage1 += $" {kop} копейки";
                         }
                     }
                 }
